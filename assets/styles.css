@@ -1,0 +1,685 @@
+/* General classes*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width {
+    margin: auto;
+    padding: 0 5rem;
+    max-width: 81.25rem;
+}
+
+.logo {
+    font-family: 'Rock Salt', cursive;
+}
+
+.menu li a {
+   font-family: 'Nothing You Could Do', cursive;
+}
+
+a {
+    text-decoration: none;
+   
+}
+
+section{
+    padding: 120px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 60px;
+    margin: auto;
+}
+
+.card-title{
+    font-family: 'Architects Daughter', cursive;
+}
+
+.know-me, .services, .skills, .teams, .contact, footer{
+    font-family: 'Quicksand', sans-serif;
+}
+.know-me .know-me-content, 
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    font-family: 'Rock Salt', cursive;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: #2B45D0;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* Nav Bar*/
+.nav-bar {
+    width: 100%;
+    position: fixed ;
+    z-index: 999;
+    padding: 2rem 0;
+    transition: all 0.3s ease;
+}
+
+.nav-bar.sticky {
+    padding: 1rem 0;
+    background-color: crimson;
+}
+
+.nav-bar .logo .silk {
+    color: #fff;
+}
+
+.nav-bar .logo a {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-bar .max-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.nav-bar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-bar.sticky .logo a span{
+    color: white;
+}
+
+.nav-bar .menu li a {
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-left: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.nav-bar .menu li a:hover {
+    color: crimson;
+}
+
+.nav-bar.sticky .menu li a:hover {
+    color:white
+}
+
+/* Menu-Button */
+.menu-button {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* home */
+.home {
+    color: white;
+    display: flex;
+    background-image: url(https://blog.hdwallsource.com/wp-content/uploads/2014/11/gradient-background-26046-26731-hd-wallpapers.jpg-680x425.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.home .max-width {
+    margin: auto 0 auto 2.5rem;
+}
+
+.home .home-content .my-name {
+    font-size: 1.5rem;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.home .home-content .my-lastname {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.my-lastname span {
+    font-family: 'Rock Salt', cursive;
+    color: crimson;
+}
+
+.home .home-content .my-job {
+    font-size: 2rem;
+}
+
+.home .home-content .my-job span{
+    color: #2B45D0;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.home .home-content a {
+    color: #fff;
+    border: 2px solid crimson;
+    font-family: 'Rock Salt', cursive;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 8px 10px;
+    display: inline-block;
+    background-color: crimson;
+    margin-top: 35px;
+    transition: all 0.3 ease;
+}
+
+.home .home-content a:hover {
+    color: crimson;
+    background: none;
+}
+
+/* Know me */   
+section {
+    padding: 105px 0;
+} 
+.know-me {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.know-me .title {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.know-me .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.know-me .title::after {
+    content: "Who I am";
+    position: absolute;
+    bottom: -27px;
+    left: 50%;
+    font-size: 20px;
+    color: #2B45D0;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+.know-me .know-me-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.know-me .know-me-content .left {
+    width: 4%;
+}
+
+.know-me .know-me-content .left img {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.know-me .know-me-content .right {
+    width: 55%;
+}
+
+.know-me .know-me-content .right .text {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.know-me .know-me-content .right .text span {
+    color: #2B45D0;
+}
+
+.know-me .know-me-content .right .text p {
+    text-align: justify;
+}
+
+.know-me .know-me-content .right a {
+    font-weight: 800;
+    color: #fff;
+    border: 2px solid crimson;
+    font-family: 'Rock Salt', cursive;
+    border-radius: 12px;
+    font-size: 1rem;
+    padding: 3px 9px;
+    display: inline-block;
+    background-color: crimson;
+    margin-top: 12px;
+    transition: all 0.3 ease;
+}
+
+.know-me .know-me-content .right a:hover {
+    color: crimson;
+    background: none;
+}
+
+/* services */
+.services, .teams{
+    color:#fff;
+    background: #111;
+}
+.services .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.services .title::after,
+.teams .title::after{
+    background: #111;
+    content: none;
+}
+.services .serv-content .card{
+    width: calc(25% - 20px);
+    height: calc(25% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: crimson;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 35px 0 12px 0;
+}
+
+/* Projects */
+.teams .title::after{
+    content: "My projects";
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    background: crimson;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #2B45D0;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+
+/* contact section styling */
+.contact .sub-title {
+    font-family: 'Architects Daughter', cursive ;
+}
+.contact .title::after{
+    content: "get in touch";
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;  
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Quicksand', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+
+.contact .right form .button button{
+    font-family: 'Architects Daughter', cursive;
+    width: 100%;
+    height: 100%;
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    outline: none;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact .inquiries {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contact .right form .button button:hover{
+    color: crimson;
+    background: none;
+}
+
+
+/* Footer */
+
+footer{
+    font-family: 'Rock Salt', cursive;
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+
+footer span a:hover{
+    text-decoration: underline;
+}
+
+/* Media-Query */
+@media (max-width: 1300px) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px) {
+    .know-me .know-me-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .menu-button{
+        display: block;
+        z-index: 999;
+    }
+    .menu-button i.active:before{
+        content: "\f00d";
+    }
+    .max-width{
+        padding: 0 3rem;
+    }
+    .nav-bar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .nav-bar .menu.active {
+        left: 0;
+    }
+    .nav-bar .menu li{
+        display: block;
+    }
+    .nav-bar .menu li a{
+        display: inline-block;
+        margin: 20px;
+        font-size: 25px;
+
+    }
+
+    .home .home-content .my-lastname {
+        font-size: 70px;
+    }
+
+    .home .home-content .my-job {
+        font-size: 35;
+    }
+
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+    .max-width {
+        max-width: 930px;
+    }
+    .know-me .know-me-content .column{
+        width: 100%;
+    }
+    .know-me .know-me-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .know-me .know-me-content .right{
+        flex: 100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .column, .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .my-lastname{
+        font-size: 60px;
+    }
+    .home .home-content .my-job{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .services .serv-content .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .my-lastname{
+        font-size: 50px;
+    }
+    .home .home-content .my-job{
+        font-size: 27px;
+    }
+    .know-me .know-me-content .right .text,
+    .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+}
